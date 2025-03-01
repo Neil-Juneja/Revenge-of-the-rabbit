@@ -1,0 +1,11 @@
+step 1: open the .zip file the one that is at the top this is a google drive link.
+
+step 2: upon opening the link you will be redirected to a google drive page, at the top right corer there will be a download button click on that.
+
+step 3: that will redirect you to another page that will say it cant scan for viruses ignore that and click on the download anyways button. once downloaded save the folder whereever you desire on your system.
+
+step 4: upon opening the zip forlder there will be another folder inside open that as well. inside that will be multiple files. double click the file that is labled as 'revenge _of_the_rabbit_beta1', this will open a pop up box asing you to extract files,click on extract all.
+
+step 5: after that open the new folder and click open the file labled the same as before.
+a windows window will open that will say unrecognised file and only give an option to not run the file. there will be a hyperlink that says "more info" click on that and a button that says "run anyways" will pop up click on that.
+your copy of the game should now work noemally whenever you wish to play it.

@@ -1,0 +1,63 @@
+'''from tkinter import Tk, Label
+root=Tk()
+def key_pressed(event):
+ w=Label(root,text="Key Pressed:"+event.char)
+ w.place(x=70,y=90)
+root.bind("<Key>",key_pressed)
+root.mainloop()'''
+'''from tkinter import Tk
+def key_pressed(event):
+    key_name = event.keysym
+    print(key_name)
+def invisible_events(event):
+    if event.keysym == "Left":
+        print("Left")
+    elif event.keysym == "Right":
+        print("Right")
+    elif event.keysym == "Up":
+        print("Up")
+    elif event.keysym == "Down":
+        print("Down")
+    elif event.keysym == "Shift_L" or event.keysym == "Shift_R":
+        print("SHIFT")
+    elif event.keysym == "Alt_L" or event.keysym == "Alt_R":
+        print("ALT")
+
+while True:
+    print("<KeyPress>", key_pressed)
+    print("<Left>", invisible_events)
+    print("<Right>", invisible_events)
+    print("<Up>", invisible_events)
+    print("<Down>", invisible_events)
+    print("<Shift_L>", invisible_events)
+    print("<Shift_R>", invisible_events)
+    print("<Alt_L>", invisible_events)
+    print("<Alt_R>", invisible_events)
+    if key_pressed"<KeyPress>"'''
+'''from tkinter import Tk, Label
+
+root = Tk()
+
+def key_pressed(event):
+    key_name = event.keysym
+    w = Label(root, text="Key Pressed: " + key_name)
+    w.place(x=70, y=90)
+    w.configure(bg='white')
+root.bind("<KeyPress>", key_pressed)
+
+root.mainloop()'''
+import pygame
+pygame.init()
+key_names = {}
+for key in dir(pygame):
+    if key.startswith("K_"):
+        key_names[getattr(pygame, key)] = key[2:]
+def print_key_name(key_name):
+    print("Key Pressed:", key_name)
+running = True
+for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+        pass
+    elif event.type == pygame.KEYDOWN:
+        if event.key in key_names:
+            print_key_name(key_names[event.key])
